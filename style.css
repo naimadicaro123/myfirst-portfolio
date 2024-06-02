@@ -1,201 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
-    scroll-behavior: smooth;
-    margin-bottom: 0PX;
-}
-body {
-    background-color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-header {
-    background-color: wheat;
-    border: solid;
-    border-width: 0 0 1px 0;
-    width: 100%;
-    padding: 1em 0;
-    font-family: 'Roboto', sans-serif;
-}
-.caixa {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    background-color: a;
+
+.cabecalho-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-.menu-toggle .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #000;
-    margin: 4px 0;
-}
-nav {
-    display: flex;
-}
-nav ul {
-    list-style: none;
-    margin-right: 20px;
-    padding: 0;
-    display: flex;
-}
-nav li {
-    margin-left: 15px;
-}
-nav a {
-    text-transform: uppercase;
-    color: #000;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-}
-.cabeta-container {
-    background-color: pink;
-}
-.icaro {
-    height: 90px;
-    margin-right: 20px;
-    margin-left:20px ;
-}
-.link:link,
-.link:visited {
-    text-decoration: none;
-}
-.link:hover {
-    color: blue;
-    transition: 1s;
-}
-.link:active {
-    text-decoration: none;
-}
-.vindo {
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
-.work {
-    color: blue;
-    text-align: center;
-}
-.cereja-container,
-.temple-container,
-.seu-container {
-    height: 50%;
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 25px;
-    border-style: solid;
-}
-.cereja-container {
-    border-color: pink;
-}
-.temple-container {
-    border-color: purple;
-}
-.seu-container {
-    border-color: aquamarine;
-}
-.descript-container {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    justify-content: center;
     align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
 }
-.yo-container {
-    height: 20%;
-    width: 20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 25px;
-    border-style: solid;
-    border-color: black;
-}
-.mim {
-    font-size: 20px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
-.teson {
-    text-align: center;
-    color: rgb(0, 0, 0);
+
+.navegador-container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
-.cat-container,
-.azul-container,
-.whats-container,
-.insta-container {
-    height: 10%;
-    width: 10%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+.navegador-container img {
+    height: 50px; /* Ajuste conforme necessário */
 }
-footer {
-    color: rgb(0, 0, 0);
-    flex-direction: row;
-    justify-content: center;
-    background-color: pink;
+
+.aslistas-container {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto; 
 }
+
+.lista-list {
+    margin-left: 20px;
+}
+
+.aslistas-container a {
+    text-decoration: none;
+    color: black;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+}
+
+/* Estilos adicionais */
+.principal-container {
+    padding: 20px;
+}
+
+.secao-container {
+    margin-bottom: 40px;
+
+}
+
+.trabalho-container {
+    margin-bottom: 40px;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.trabalho-container div {
+    margin-bottom: 20px;
+    display: inline-flex;
+    margin-top: 20px;
+    margin-right:20px ;
+    margin-left: 20px;
+}
+.rosario-container, .crud-container, .amigo-container{
+    
+}
+.contato-container {
+    margin-bottom: 40px;
+}
+
+.imagens-container img {
+    margin-right: 10px;
+}
+
 .pe-container {
-    flex-direction: row;
-    justify-content: space-around;
-    position: relative;
-    align-items: center;
-    margin-bottom: 0px;
-}
-.about,
-.japon {
-    align-items: center;
-    padding: 10px 10px;
-}
-.contact {
-    display: inline;
-}
-#redes1-container,
-#redes2-container {
-    align-items: center;
     text-align: center;
-    justify-content: center;
-    margin-left:;
-}
-.link-1:hover {
-    color: blue;
-}
-.link-1:active {
-    text-decoration: none;
-}
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-        margin-right: 20px;
-    }
-    nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        background-color: pink;
-    }
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-    }
-    nav li {
-        margin: 10px 0;
-    }
-    nav a {
-        font-size: 18px;
-    }
-    nav.nav-open {
-        display: flex;
-    }
+    padding: 20px;
+    background-color: #f8f8f8;
 }

@@ -1,172 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-.cabecalho-container {
+.introduction{
+    background-color: whitesmoke;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f8f8f8;
-    box-shadow: 12px 12px 10px 5px gray;
+    padding: 10px;
+    padding-left: 20px;
+ 
 }
-
-.navegador-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.navegador-container img {
-    height: 50px; 
-    margin-left: 20px;
-}
-
-.aslistas-container {
-    list-style-type: none;
-    display: flex;
-    margin-left: auto; 
-    padding: 0;
-}
-
-.lista-list {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer 20px;
-}
-
-.lista-list a {
-    text-decoration: none;
-    color: black;
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 600;
-    transition: color 0.3s ease, font-size 0.5s ease-in-out; 
-}
-
-.lista-list:hover a {
-    color: gold;
-    font-size: 17px;
-}
-.principal-container {
-    padding: 20px;
-    text-align: center;
-}
-
-.secao-container {
-    margin-bottom: 40px;
-    display: block;
-    text-align: center;
-    align-items: center;
-} 
-.texto-container{
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 5px;
+.introduction p{
     font-size: 20px;
-    text-align: center;
-    margin: 20px auto;
+    
 }
-.sup-container{
-    text-align: center;
-    align-items: center;
-    margin-bottom:20px ;
+.introduction span{
+    font-size: 25px;
 }
-.mim-container{
-    text-align: center;
-    align-items: center;
-    max-width: 300px;
-    max-height: 300px;
-    width: 300px;
-    height: 300px;
-    border-radius:10px ;
-    border-color:mediumseagreen ;
-    border-style:solid ;
-    box-shadow: 12px 12px 10px 5px gray;
+.icaro{
+    width: 17rem;
+    height: 16rem;
+    border-radius: 5px
 }
-.trabalho-container {
-    margin-bottom: 40px;
-    text-align: center;
-    align-items: center;
-    margin: 20px;
+.introduction .my_person{
+    flex-direction: ;
+    margin-left: 20rem;
 }
-
-.trabalho-container div {
-    margin-bottom: 20px;
+.developer h2{
+    border-left: 5px solid green; /* Borda esquerda verde */
+    padding-left: 10px;
+}
+.developer{
+   margin-left: 20px;
+   padding-left: 5px;
+}
+.my_skills{
     display: flex;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
 }
-.trabalho-container button{
-  padding: 10px;
-  border-radius: 8px;
-  font-size: 20px;
-}
-.trabalho-container a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-}
-.rosario-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-
-}
-.crud-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-
-} 
-.crud-container img{
-    width: 400px;
-    height: 350px;
-    margin-bottom: 
-    20px;
-    border-radius:10px;
-}
-.amigo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-
-}
-.amigo-container img{
-    width: 400px;
-    height: 350px;
-    margin-bottom: 
-    20px;
-    border-radius:10px;
-}
-.trabalho-container button{
-
-}
-.contato-container {
-    margin-bottom: 40px;
-}
-
-.imagens-container img {
-    margin-right: 10px;
-}
-.inst-container, .linke-container, .whats-container{
-    width: 100px;
-    height: 100px;
-    margin-bottom: 
-    20px;
-    border-radius:10px;
+.my_skills div{
+    display: block;
     padding: 20px;
 }
-.pe-container {
-    text-align: center;
-    padding: 5px;
-    background-col

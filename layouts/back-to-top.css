@@ -1,0 +1,47 @@
+/* SETA BACK TO TOP ########### */
+#back_to_top {
+    position: fixed;
+    z-index: 2;
+    color: black;
+    bottom: 40px;
+    right: 30px;
+    height: 48px; /* Altura do círculo */
+    width: 48px;  /* Largura do círculo */
+    display: grid; /* Utiliza grid para centralização */
+    place-items: center; /* Centraliza o conteúdo no grid */
+    border-radius: 50%; /* Forma um círculo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.4s all;
+  }
+  
+  #btn_back {
+    display: flex; /* Alterado para flex */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 81%; /* Alinha à altura do círculo */
+    width: 82%; /* Alinha à largura do círculo */
+    background-color: white; /* Cor de fundo do botão */
+    border-radius: 50%; /* Mantém o formato circular */
+  }
+  
+  /* Opcional: Estilização do SVG */
+  #btn_back svg {
+    height: 15px; /* Ajuste a altura do SVG conforme necessário */
+    width: 12px;  /* Ajuste a largura do SVG conforme necessário */
+    fill: currentColor; /* Usa a cor do texto para o ícone */
+  }
+  
+    
+    /* EFEITO AO CLICAR NA SETA */
+    
+    #back_to_top #btn_back #icon_up:hover {
+      transform: translateY(-3px);
+    }
+    
+    #back_to_top #btn_back #icon_up:active {
+      transform: translateY(0px);
+    }
+  
+    

@@ -80,27 +80,37 @@
         </div>
       </section>
       <section class="my_projects" id="projetos">
-        <div class="developer">
-          <h2>Meus Projetos</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eligendi, veritatis cumque quibusdam quas nobis in dicta saepe voluptas repellat qui quasi ad, nesciunt rem quis molestiae? Libero, nulla recusandae! </p>
-        </div>
-        <div class="great_works">
-          <h3>CRUD PHP</h3>
-<img src="imagens/crud-1.png" alt="" class="works">
-<a href="https://seuamigo.netlify.app/"><button>Ir Ver</button></a>
-        </div>
-        <div class="great_works">
-          <h3>Seu Amigo</h3>
-<img src="imagens/amigo.png" alt="" class="works">
-<a href="https://seuamigo.netlify.app/"><button>Ir Ver</button></a>
-        </div>
-        
-        <div class="great_works">
-          <h3>CRUD PHP</h3>
-<img src="imagens/crud-1.png" alt="" class="works">
-<a href="https://seuamigo.netlify.app/"><button>Ir Ver</button></a>
-        </div>
-      </section>
+  <div class="developer">
+    <h2>Meus Projetos</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eligendi, veritatis cumque quibusdam quas nobis in dicta saepe voluptas repellat qui quasi ad, nesciunt rem quis molestiae? Libero, nulla recusandae! </p>
+  </div>
+  
+  <div class="great_works">
+    <h3>CRUD PHP</h3>
+    <img src="imagens/crud-1.png" alt="Projeto CRUD PHP" class="works" onclick="openCustomModal(this)">
+    <a href="https://seuamigo.netlify.app/"><button>Ir Ver</button></a>
+  </div>
+  
+  <div class="great_works">
+    <h3>Seu Amigo</h3>
+    <img src="imagens/amigo.png" alt="Projeto Seu Amigo" class="works" onclick="openCustomModal(this)">
+    <a href="https://seuamigo.netlify.app/"><button>Ir Ver</button></a>
+  </div>
+  
+  <div class="great_works">
+    <h3>CRUD PHP</h3>
+    <img src="imagens/crud-1.png" alt="Projeto CRUD PHP" class="works" onclick="openCustomModal(this)">
+    <a href="https://seuamigo.netlify.app/"><button>Ir Ver</button></a>
+  </div>
+
+  <!-- Modal de Imagem -->
+  <div id="customModal" class="custom_modal">
+    <span class="close_modal" onclick="closeCustomModal()">&times;</span>
+    <img class="custom_modal_content" id="customModalImage">
+    <div id="customModalCaption" class="custom_modal_caption"></div>
+  </div>
+</section>
+
       <div class="developer" id="experiencias">
         <h2>Formações e Experiências</h2>
 <ul>
@@ -116,7 +126,8 @@
       </div>
     </main>
     <?php include('layouts/footer.php'); ?>
-
+    <script src="script.js"></script>
+    <script src="layouts/lateral_menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

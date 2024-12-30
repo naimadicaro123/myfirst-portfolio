@@ -188,6 +188,174 @@ p{
 .great_works{
     padding-bottom: 10px;
 }
+/* Modal*/
+
+/* Estilo do Modal */
+.custom_modal {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  z-index: 1; /* Fica sobre outros elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Habilita rolagem se necessário */
+  background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo com transparência */
+  padding-top: 60px; /* Espaço de 60px no topo */
+}
+
+/* Modal Content (a imagem no modal) */
+.custom_modal_content {
+  margin: auto;
+  display: block;
+  width: 80%; /* 80% da largura da tela */
+  max-width: 700px; /* Largura máxima de 700px */
+}
+
+/* Estilo para o botão de fechar */
+.close_modal {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close_modal:hover,
+.close_modal:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.custom_modal_caption {
+  margin: 20px;
+  font-size: 18px;
+  color: #f1f1f1;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Estilo dos itens do projeto */
+.project_item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project_item img {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project_item img:hover {
+  transform: scale(1.05);
+}
+
+.project_item a button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.project_item a button:hover {
+  background-color: black;
+}
+
+
+/* Estilo do Modal */
+.custom_modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    z-index: 1; /* Fica sobre outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Habilita rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo com transparência */
+    padding-top: 60px; /* Espaço de 60px no topo */
+  }
+  
+  /* Modal Content (a imagem no modal) */
+  .custom_modal_content {
+    margin: auto;
+    display: block;
+    width: 80%; /* 80% da largura da tela */
+    max-width: 700px; /* Largura máxima de 700px */
+  }
+  
+  /* Estilo para o botão de fechar */
+  .close_modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close_modal:hover,
+  .close_modal:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .custom_modal_caption {
+    margin: 20px;
+    font-size: 18px;
+    color: #f1f1f1;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Estilo dos itens do projeto */
+  .great_works {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .great_works img {
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .great_works img:hover {
+    transform: scale(1.05);
+  }
+  
+  .great_works a button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .great_works a button:hover {
+    background-color: black;
+  }
+  
+
 /*FOOTER*/
 .footer {
     background-color: #333; /* Cor de fundo escura */

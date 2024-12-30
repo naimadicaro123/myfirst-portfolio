@@ -1,3 +1,4 @@
+
 :root{
     --Azul-claro: ;
 }
@@ -17,6 +18,12 @@ p{
     margin-bottom: 20px;
     margin-left: 0; /* Remover o espaçamento à esquerda para essa seção */
 }
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
 
 .introduction p {
     font-size: 20px;
@@ -115,6 +122,8 @@ p{
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
     text-align: center;
     transition: transform 0.3s ease; /* Transição suave para o efeito hover */
+    background-color: #f8f8f8;
+
 }
 
 .my_skills .language1:hover {

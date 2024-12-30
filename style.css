@@ -1,38 +1,205 @@
-.introduction{
-    background-color: whitesmoke;
+:root{
+    --Azul-claro: ;
+}
+body{
+ scroll-behavior: smooth;
+ font-family: 'Kanit', sans-serif;
+}
+p{
+    font-size: 20px;
+}
+.introduction {
+    background-color: rgb(228, 212, 212);
     display: flex;
     padding: 10px;
-    padding-left: 20px;
- 
+    /* padding-left: 20px; */
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0; /* Remover o espaçamento à esquerda para essa seção */
 }
-.introduction p{
+
+.introduction p {
     font-size: 20px;
-    
+    margin-left: 10px;
 }
-.introduction span{
+
+.introduction span {
     font-size: 25px;
+    margin-left: 10px;
+
 }
-.icaro{
-    width: 17rem;
-    height: 16rem;
-    border-radius: 5px
+.introduction h1 {
+    /* font-size: 25px; */
+    margin-left: 10px;
+
 }
-.introduction .my_person{
-    flex-direction: ;
-    margin-left: 20rem;
+.icaro {
+    width: 15rem;
+    height: 14rem;
+    border-radius: 5px;
 }
-.developer h2{
+
+.introduction .my_person {
+    margin-left: 20rem; 
+}
+@media (max-width: 767px) {
+    .introduction{
+        padding: 5px;
+        padding-left: 10px;
+    }
+    .icaro{
+        width: 10rem;
+        height: 9rem;
+    }    
+    .introduction span {
+        font-size: 20px;
+    }   
+    .introduction p {
+        font-size: 15px;
+    } 
+    .introduction .my_person {
+        margin-left: 1rem;
+    }
+}
+.developer h2 {
     border-left: 5px solid green; /* Borda esquerda verde */
     padding-left: 10px;
+    /* color: ; */
 }
-.developer{
-   margin-left: 20px;
-   padding-left: 5px;
+
+.developer {
+    margin-left: 20px;
+    padding-left: 5px;
+    /* justify-content: center!important;
+    align-items: center!important;
+    justify-content: center!important; */
 }
-.my_skills{
-    display: flex;
+.developer ul{
+    margin-left: 0!important;
 }
-.my_skills div{
-    display: block;
+.developer ul li{
+    list-style: none;
+    font-size: 20px;
+    margin-left: 0!important;
+}
+.my_skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas com a mesma largura */
+    gap: 20px; /* Espaçamento entre as colunas */
     padding: 20px;
+    justify-items: center; /* Centraliza cada item (skill) dentro da grid */
+    align-items: center; /* Alinha cada item verticalmente no centro */
+    max-width: 1200px; /* Limita a largura máxima da grid */
+    margin: 0 auto; /* Centraliza a grid horizontalmente */
+}
+.my_skills div .imagens{
+    display: flex;
+    padding-right:5px;
+}
+.my_skills div .imagens img{
+    width: 3rem;
+    height: 3rem; 
+}
+.my_skills div .imagens2 img{
+    width: 3rem;
+    height: 3rem; 
+}
+.my_skills div .imagens .php_image{
+    width: 5rem;
+    height:3rem; 
+}
+.my_skills .language1 {
+    background-color: #f8f9fa; /* Cor de fundo clara para as skills */
+    padding: 20px;
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    transition: transform 0.3s ease; /* Transição suave para o efeito hover */
+}
+
+.my_skills .language1:hover {
+    transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+}
+
+.my_skills i {
+    font-size: 40px;
+    margin-bottom: 10px; /* Espaçamento entre o ícone e o texto */
+    color: #007bff; /* Cor azul para os ícones */
+}
+
+.my_skills strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Cor escura para o texto */
+}
+
+.my_skills p {
+    font-size: 15px;
+    color: #666; /* Cor mais suave para o texto descritivo */
+    margin-top: 10px;
+}
+
+.my_projects img{
+    border-radius: 5px;
+    width: 40rem;
+    height: 25rem;
+    margin: 0 auto;
+}
+.great_works{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.great_works a{
+    display: block;
+    margin-top: 10px;
+}
+
+.great_works a button{
+    border: 0;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.great_works a button:hover{
+    background-color: black;
+    transition: ease-in-out 0.5s;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .my_skills {
+        grid-template-columns: 1fr; /* Para telas pequenas, as skills ficam em uma coluna */
+    }
+}
+.great_works{
+    padding-bottom: 10px;
+}
+/*FOOTER*/
+.footer {
+    background-color: #333; /* Cor de fundo escura */
+    color: white; /* Texto branco */
+    padding: 20px 0; /* Espaçamento em cima e embaixo */
+    text-align: center; /* Alinha o texto ao centro */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+.footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }

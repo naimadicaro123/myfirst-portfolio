@@ -1,0 +1,78 @@
+/* Estilo para o botão de alternância */
+.toggle-btn {
+    position: fixed;
+    left: 15rem;
+    /* Posição inicial */
+    top: 7.5rem;
+    width: 3rem;
+    height: 2rem;
+    transition: left 0.2s ease;
+    /* Suaviza o movimento */
+    border-radius: 0 10px 10px 0;
+    background-color: #d0e6e9;
+    border: none;
+    z-index: 10;
+    /* Garante que o botão fique acima de outros elementos */
+}
+
+/* Estilo da imagem dentro do botão */
+#toggle-btn img {
+    background-color: #56a7b2;
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Estilo para o ícone de seta */
+#arrow {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    transition: transform 0.5s ease, left 0.3s ease;
+    transform-origin: center;
+}
+
+#arrow.rotate {
+    transform: rotate(180deg);
+}
+/* Classe 'arrow-left' para mover a seta para a esquerda, junto com o botão */
+#arrow.arrow-left {
+    left: 30;
+    /* Move o ícone da seta para a esquerda junto com o botão */
+}
+
+
+/* Classe para girar o ícone da seta */
+
+/* Classe 'arrow-left' para mover a seta para a esquerda, junto com o botão */
+#toggle-btn.arrow-left {
+    left: 0;
+    /* Move o ícone da seta para a esquerda junto com o botão */
+}
+
+/* Estilos da barra lateral (menu lateral) */
+.sidenav.collapsed {
+    width: 0px;
+    padding: 0px;
+    left: -50px;
+}
+
+/* Quando a barra lateral está colapsada, o botão de alternância também se move */
+.sidenav.collapsed+.toggle-btn {
+    left: 0;
+    /* Move o botão para a esquerda junto com a seta */
+}
+
+/* Quando o menu está colapsado, ajusta o conteúdo */
+.sidenav.collapsed~.content {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+}
+
+/* Ajusta o botão de alternância e a seta quando o menu é colapsado */
+.sidenav.collapsed+.toggle-btn,
+.sidenav.collapsed+.toggle-btn #arrow {
+    left: 0;
+    /* Move o botão e a seta para a esquerda */
+}

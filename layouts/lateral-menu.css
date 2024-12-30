@@ -1,0 +1,84 @@
+
+
+/* Estilo para o menu lateral (sidebar) */
+.sidebar {
+    height: 100%; /* Ocupa toda a altura da página */
+    width: 250px; /* Largura do menu lateral */
+    position: fixed; /* Fixo à esquerda da página */
+    top: 0;
+    left: 0;
+    background-color: #2ab865; /* Cor de fundo do menu */
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none; /* Remove os marcadores das listas */
+     padding: 0;
+     margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}  
+
+.sidebar ul li {
+    padding: 15px;
+    width: 100%;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 10px 10px 10px 10px;
+    transition: background-color 0.3s;
+    z-index: 100;
+}
+
+/* Efeito hover para os links do */
+.sidebar ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+    transition: ease-in-out 0.5s;
+}
+.manu_foto{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    object-fit: cover; /* Ajusta a imagem para não distorcer */
+}
+.image_menu{
+    width: 10rem;
+    height: 10rem; 
+    margin: 0 auto;
+}
+svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.white_circle{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.white_circle:hover{
+    background-color: violet;
+    transition: ease-in-out 0.5s;
+}
+.great_circle{
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.great_circle a:visited{
+  color: black;
+}
+/* Estilo para o conteúdo principal */
+.content {
+    margin-left: 250px;  /*Adiciona um espaço para o menu lateral */
+    /* padding: 20px; */
+}

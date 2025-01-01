@@ -45,9 +45,10 @@
 <hr>
             <ul>
                 <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>   
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#experiencias">Experiência</a></li>    
-                <li><a href="#contato">Contato</a></li>        
+                     
             </ul>
             
         <!-- </menu> -->

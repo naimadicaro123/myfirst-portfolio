@@ -26,8 +26,13 @@
           <img src="imagens/eu.jpeg" alt="" class="icaro">
         </div>
       </section> 
-      
       <div class="developer" id="sobre-mim">
+        <h2>Sobre mim</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, odio? Assumenda suscipit, autem nam tenetur obcaecati qui voluptates ipsa asperiores illo, dignissimos veniam modi nihil consequuntur cumque magni impedit numquam.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, aut saepe. Quasi iure, placeat illum animi nulla quia saepe consequuntur ab incidunt, sed, odit exercitationem? Magni illum neque provident necessitatibus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit accusantium unde ea facere amet. Maiores aliquam eius laboriosam odio ipsum non placeat, quas at dolores facere vel ipsam nemo rerum.</p>
+      </div> 
+      <div class="developer" id="tecnologias">
         <h2>Desenvolvo com o que?</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eligendi, veritatis cumque quibusdam quas nobis in dicta saepe voluptas repellat qui quasi ad, nesciunt rem quis molestiae? Libero, nulla recusandae! </p>
       </div>
@@ -121,9 +126,7 @@
         <li>Estágio de 5 meses na EGPCE.</li>
 </ul>
       </div>
-      <div class="developer" id="experiencias">
-        <h2>Contato</h2>
-      </div>
+      
     </main>
     <?php include('layouts/footer.php'); ?>
     <script src="script.js"></script>

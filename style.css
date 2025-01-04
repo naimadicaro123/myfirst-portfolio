@@ -10,20 +10,15 @@ p{
     font-size: 20px;
 }
 .introduction {
-    background-color: rgb(228, 212, 212);
+    background-color: rgb(39, 146, 18);
     display: flex;
     padding: 10px;
     /* padding-left: 20px; */
     width: 100%;
     margin-bottom: 20px;
     margin-left: 0; /* Remover o espaçamento à esquerda para essa seção */
+    color: white;
 }
-/* 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
 
 .introduction p {
     font-size: 20px;
@@ -45,7 +40,9 @@ p{
     height: 14rem;
     border-radius: 5px;
 }
-
+.introduction .description span span{
+    margin-left: 0px;
+}
 .introduction .my_person {
     margin-left: 20rem; 
 }
@@ -68,6 +65,11 @@ p{
         margin-left: 1rem;
     }
 }
+.icaro {
+    width: 15rem;
+    height: 14rem;
+    border-radius: 5px;
+}
 .developer h2 {
     border-left: 5px solid green; /* Borda esquerda verde */
     padding-left: 10px;
@@ -75,6 +77,7 @@ p{
 }
 
 .developer {
+    margin-right: 20px;
     margin-left: 20px;
     padding-left: 5px;
     /* justify-content: center!important;
@@ -152,8 +155,8 @@ p{
 
 .my_projects img{
     border-radius: 5px;
-    width: 40rem;
-    height: 25rem;
+    width: 70rem!important;
+    height: 30rem;
     margin: 0 auto;
 }
 .great_works{
@@ -184,6 +187,7 @@ p{
     .my_skills {
         grid-template-columns: 1fr; /* Para telas pequenas, as skills ficam em uma coluna */
     }
+
 }
 .great_works{
     padding-bottom: 10px;
@@ -209,7 +213,7 @@ p{
   margin: auto;
   display: block;
   width: 80%; /* 80% da largura da tela */
-  max-width: 700px; /* Largura máxima de 700px */
+  max-width: 900px; /* Largura máxima de 700px */
 }
 
 /* Estilo para o botão de fechar */
@@ -292,7 +296,7 @@ p{
     margin: auto;
     display: block;
     width: 80%; /* 80% da largura da tela */
-    max-width: 700px; /* Largura máxima de 700px */
+    max-width: 900px; /* Largura máxima de 700px */
   }
   
   /* Estilo para o botão de fechar */
@@ -307,7 +311,7 @@ p{
   }
   
   .close_modal:hover,
-  .close_modal:focus {
+  .close_modal:focus {custom_modal_content
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
@@ -380,3 +384,34 @@ p{
 .footer a:hover {
     text-decoration: underline;
 }
+/*RESPONSIVIDADE*/
+@media (min-width: 576px) and (max-width: 768px) {
+    .my_person .icaro{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5px;
+    padding-bottom: 10px;
+
+    }
+    .introduction{
+    padding: 15px;
+    height: 20rem;
+    display: flex;
+    }
+    .introduction .description span span{
+        margin-left: 10px;
+    }
+    .my_projects img{
+        border-radius: 5px;
+        width: 20rem!important;
+        height: 12rem;
+        margin: 0 auto;
+        }
+        .custom_modal_content {
+            margin: auto;
+            display: block;
+            width: 80%; /* 80% da largura da tela */
+            max-width: 900px; /* Largura máxima de 700px */
+          }
+}
+

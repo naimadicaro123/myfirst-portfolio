@@ -22,6 +22,14 @@ function openCustomModal(imgElement) {
     var modal = document.getElementById("customModal");
     modal.style.display = "none"; // Fecha o modal
   }
+// Seleciona o botão de toggle e o menu lateral
+const toggleButton = document.querySelector('.toggle-btn');
+const sidebar = document.querySelector('.sidebar');
+
+// Função que alterna a classe 'collapsed' no menu
+toggleButton.addEventListener('click', function() {
+    sidebar.classList.toggle('collapsed');
+});
   
   
   

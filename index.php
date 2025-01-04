@@ -17,9 +17,9 @@
       <?php include('layouts/lateral-menu.php'); ?>
             <section class="introduction">
               
-        <div>
+        <div class="description">
           <h1>Icaro Damian</h1>
-          <span>Desenvolvedor Web Junior</span>
+          <span>Desenvolvedor Web <span>Junior</span></span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempore, in sunt sequi voluptate obcaecati eaque iusto qui nisi! Ab fuga enim possimus omnis corrupti magni animi culpa, deleniti quo.</p>
         </div>
         <div class="my_person">

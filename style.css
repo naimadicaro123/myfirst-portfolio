@@ -389,9 +389,10 @@ p{
     .my_person .icaro{
     width: 10rem;
     height: 10rem;
-    border-radius: 5px;
+    border-radius: 5px!important;
+    /* border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; */
     padding-bottom: 10px;
-
     }
     .introduction{
     padding: 15px;
@@ -399,19 +400,19 @@ p{
     display: flex;
     }
     .introduction .description span span{
-        margin-left: 10px;
+    margin-left: 10px;
     }
     .my_projects img{
-        border-radius: 5px;
-        width: 20rem!important;
-        height: 12rem;
-        margin: 0 auto;
-        }
-        .custom_modal_content {
-            margin: auto;
-            display: block;
-            width: 80%; /* 80% da largura da tela */
-            max-width: 900px; /* Largura máxima de 700px */
-          }
+    border-radius: 5px;
+    width: 20rem!important;
+    height: 12rem;
+    margin: 0 auto;
+    }
+    .custom_modal_content {
+    margin: auto;
+    display: block;
+    width: 40rem!important  ; /* 80% da largura da tela */
+
+    }
 }
 

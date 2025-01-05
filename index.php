@@ -25,6 +25,7 @@
         <div class="my_person">
           <img src="imagens/eu.jpeg" alt="" class="icaro">
         </div>
+        
       </section> 
       <div class="developer" id="sobre-mim">
         <h2>Sobre mim</h2>

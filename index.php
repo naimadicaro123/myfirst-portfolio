@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layouts/lateral-menu.css">
     <link rel="stylesheet" href="layouts/back-to-top.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="layouts2/colapsar.css">
   </head>
@@ -18,14 +19,21 @@
             <section class="introduction">
               
         <div class="description">
+          <div class="text_description">
           <h1>Icaro Damian</h1>
           <span>Desenvolvedor Web <span>Junior</span></span>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempore, in sunt sequi voluptate obcaecati eaque iusto qui nisi! Ab fuga enim possimus omnis corrupti magni animi culpa, deleniti quo.</p>
-        </div>
-        <div class="my_person">
-          <img src="imagens/eu.jpeg" alt="" class="icaro">
-        </div>
-        
+          </div>
+          <div class="profile_image_container">
+    <img src="imagens/eu.jpeg" alt="Icaro Damian" class="profile_image" onclick="openProfileModal(this)">
+  </div>
+        <!-- Modal para imagem do perfil -->
+<div id="profileModal" class="modal_container">
+  <span class="close_modal_button" onclick="closeProfileModal()">&times;</span>
+  <img class="modal_image" id="profileModalImage">
+  <div id="profileModalCaption" class="modal_caption"></div>
+</div>
+
       </section> 
       <div class="developer" id="sobre-mim">
         <h2>Sobre mim</h2>

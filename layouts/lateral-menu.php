@@ -3,21 +3,21 @@
     <!-- Menu Lateral -->
     <div class="sidebar">
         <!-- Botão para Toggle do Menu -->
-    <!-- <button class="toggle-btn" id="toggleBtn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-            <path d="M0 1.5A.5.5 0 0 1 .5 1h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5A.5.5 0 0 1 0 2.5v-1zM0 7.5a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 6a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1z"/>
-        </svg>
-    </button> -->
+        <button class="toggle-btn" id="toggleBtn">
+        <i class="bi bi-arrow-left"></i>
+    </button>
         <!-- <menu> -->
-            <div class="image_menu">
-                <img src="imagens/new_foto.jpeg" alt="" class="manu_foto" onclick="openModal(this)">
-            </div>
+        <div class="image_menu">
+    <img src="imagens/new_foto.jpeg" alt="" class="manu_foto" onclick="openModal(this)">
+</div>
 
-            <div id="imageModal" class="modal">
+<!-- Modal -->
+<div id="imageModal" class="modal">
     <span class="close" onclick="closeModal()">&times;</span>
     <img class="modal-content" id="modalImage">
     <div id="caption"></div>
-            </div> 
+</div>
+
 
   <div class="great_circle">
             <div class="white_circle">
@@ -59,4 +59,4 @@
             
         <!-- </menu> -->
     </div>
-    <!-- <script src="layouts/lateral_menu,js"></script> -->
+    <script src="layouts/lateral_menu,js"></script>

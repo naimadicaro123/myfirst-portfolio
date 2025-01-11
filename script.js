@@ -30,6 +30,22 @@ const sidebar = document.querySelector('.sidebar');
 toggleButton.addEventListener('click', function() {
     sidebar.classList.toggle('collapsed');
 });
-  
+  // Função para abrir o modal
+function openProfileModal(imgElement) {
+  var modal = document.getElementById("profileModal");
+  var modalImg = document.getElementById("profileModalImage");
+  var captionText = document.getElementById("profileModalCaption");
+
+  modal.style.display = "block";
+  modalImg.src = imgElement.src;
+  captionText.innerHTML = imgElement.alt;
+}
+
+// Função para fechar o modal
+function closeProfileModal() {
+  var modal = document.getElementById("profileModal");
+  modal.style.display = "none";
+}
+
   
   
